@@ -1,0 +1,111 @@
+@font-face {
+	font-family: 'adventure';
+	font-weight: 100;
+	src:url('../fonts/Adventure.otf');
+}
+
+body{
+	padding-bottom: 40px;
+	min-width: 960px;
+	/*background: url("../images/background.jpg") no-repeat center center fixed;*/
+	background-size: cover;
+}
+
+body::before {
+	content: "";
+	background-color: rgba(255,255,255,0.7);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: fixed;
+	z-index: -1;   
+}
+
+#title{
+	font-size: 100px;
+	color:#C51F1F;
+}
+
+#footer{
+	bottom: 0;
+	position: fixed;
+	background: #000000;
+	padding: 5px;
+	color:#999999;
+	text-align:center;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.numbers {
+	font-family: 'adventure';
+	text-align: center; 
+	font-size:100px;
+	color: #67b0d1;       
+}
+
+.title {        
+	text-align: center; 
+	font-family: Arial; 
+	font-size: 30px;
+	font-weight: 600;
+	color: #C51F1F;
+}
+
+#table {
+	margin-left:auto; 
+	margin-right:auto;
+	height: 48px;
+	border-style: none;
+	background-color: transparent;
+	z-index:100;   
+}
+
+#table td{
+	padding:15px;
+}
+
+#sexyregistration, #sexylogin, #sexycontinue, #sexylogout{
+	color: #67b0d1;
+	font-size: 18pt;
+	border-color: #CFCFCF;
+	border-width: 3px;
+	border-radius: 7px 7px 7px 7px;
+	background-color: transparent;
+	margin-right: 20px;
+}
+
+#sexyrules, #sexylogout2, #sexyleader, #sexyprizes, #sexyadmin, #sexyforum{
+	color: #67b0d1;
+	font-size: 18pt;
+	border-color: #CFCFCF;
+	border-width: 3px;
+	border-radius: 7px 7px 7px 7px;
+	background-color: transparent;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+#userData th{
+	text-align: center;
+	font-size: 14pt;
+	color: #C51F1F;
+	background-color: rgba(0,0,0,0.7);
+}
+
+#userData td{
+	text-align: center;
+	font-weight: bold;
+	font-size: 13pt;
+	color: #67b0d1;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#leader{
+	color: #67b0d1;
+}
+#flash{
+	height:250px;
+	overflow-y:scroll;
+}
