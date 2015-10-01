@@ -1,7 +1,7 @@
 var current="Hackathon Has Begun.";
 var year=2015;      
 var month=10;        
-var day=4;         
+var day=3;         
 var hour=09;       
 var minute=00;   
 var tz=+5.5;        

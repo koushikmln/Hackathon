@@ -12,11 +12,13 @@ include 'config.php';
 	<link rel='stylesheet' href='css/style.css'>
 	<link rel='stylesheet' href='css/bootstrap.min.css'>
 	<link rel='stylesheet' href='js/dataTables.bootstrap.css'>
+	<link href="<?php echo CSS_URL; ?>material.css" rel='stylesheet' type='text/css' />
+    <link href="<?php echo CSS_URL; ?>ripples.css" rel='stylesheet' type='text/css' />
 </head>
 
 <body>
 	<center>
-		<h1 id="title"><span style="color:#FFFFFF;">Leaderboard</span></h1>
+		<h1 id="title">Leaderboard</h1>
 		<br><br><br>
 		<div id="leader" style="width:80%;">
 			<table id="userData" class="responsive table table-striped table-bordered" width="100%">
@@ -58,6 +60,8 @@ include 'config.php';
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery.dataTables.min.js"></script>
 	<script src="js/dataTables.bootstrap.js"></script>
+	<script src="<?php echo JS_URL; ?>material.min.js"></script>
+	<script src="<?php echo JS_URL; ?>ripples.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
 		$('#userData').DataTable({

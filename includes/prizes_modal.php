@@ -6,20 +6,18 @@
         <h2 class="modal-title" id="myModalLabel">PRIZES</h2>
       </div>
         <div class="modal-body">
-         <img src="<?php echo IMAGE_URL?>prizes.jpg" width="100%">
-         <hr>
-         <p>Mystique 4.0 brings you a loot unmatched by any other competition this BITOTSAV.</p>
-         <p>Prizes worth INR 20K are up for grabs!</p>
+         <p>Hackathon brings you a loot unmatched by any other competition this Pantheon.</p>
+         <p>Prizes worth INR 2000 are up for grabs!</p>
          <p>Fight your way to the top and take home:</p>
          <ol>
-            <li>Asus Phonepad Tablet</li>
-            <li>Apple iPod Shuffle</li>
-            <li>JBL Headphone</li>
+            <li>Rs 1000/-</li>
+            <li>Rs 700/-</li>
+            <li>Rs 400/-</li>
          </ol>
-         <p>Most importantly, get bragging rights to say you have conquered <strong>Mystique 4.0</strong></p>
+         <p>Most importantly, get bragging rights to say you have conquered <strong>Hackathon</strong></p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ session_start();
 session_set_cookie_params(60 * 60 * 6); //Session limit 6 hours
 clearstatcache();
 
-define("SITE_URL", "http://localhost/hackathon/");
+define("SITE_URL", "http://192.168.106.203/hackathon/");
 define("PUBLIC_URL", SITE_URL);
 define("JS_URL", PUBLIC_URL . "js/");
 define("CSS_URL", PUBLIC_URL . "css/");
@@ -14,8 +14,8 @@ define("IMG_PATH", SITE_URL . "game_img/");
 define("SQL_HOST", "localhost");
 define("SQL_PORT", "3306");
 define("SQL_USER", "root");
-define("SQL_PASS", "cassandra02#");
-define("SQL_DB", "");
+define("SQL_PASS", "cassandra");
+define("SQL_DB", "hackathon");
 
 define("MAIL_PATH", dirname(__FILE__) . "/PHPMailer/PHPMailerAutoload.php");
 define("MAIL_USER", "mystique@bitotsav.in");

@@ -40,7 +40,7 @@ if($flag){
 	try{
 		$con = new PDO('mysql:dbname='.SQL_DB.';host='.SQL_HOST, SQL_USER, SQL_PASS);
 		//Check if Nick is Exists
-		$stmt = $con->prepare("SELECT * FROM registration where nick = ?");
+		$stmt = $con->prepare("SELECT password FROM registration where nick = ?");
 		$stmt->execute(array($nick));
 		$row = $stmt->fetch();
 		if(!$row){
@@ -48,7 +48,7 @@ if($flag){
 			die();
 		}else{
 		//Verify Password
-			if(password_verify($password,$row[2])){
+			if(password_verify($password,$row[0])){
 				$_SESSION['nick'] = $nick;
 				$stmt2 = $con->prepare("SELECT level FROM game where nick = ?");
 				$stmt2->execute(array($nick));

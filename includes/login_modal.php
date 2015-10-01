@@ -27,7 +27,7 @@
           <div id="login_alert" class="alert alert-success" role="alert"></div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
           <button type="submit" id="login_submit" class="btn btn-primary">Login</button>
         </div>
       </form>

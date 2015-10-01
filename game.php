@@ -24,13 +24,12 @@ else if(in_array($_SESSION['nick'], $bans)){
 	<div align="center">
 		<?php
 		if(in_array($_SESSION['nick'], $admins)){
-			echo '<a style="float: left; position: absolute; left: 5%;" target="_blank" href="admin.php"><button id="sexyadmin" type="button" style="background:transparent;" class="btn btn-primary btn-lg">Admin</button></a>';
+			echo '<a style="float: left; position: absolute; left: 5%;" target="_blank" href="admin.php"><button id="sexyadmin" type="button" class="btn btn-primary btn-lg">Admin</button></a>';
 		}
 		?>
-		<a style="float: right; position: absolute; right: 35%;" target="_blank" href="https://apps.facebook.com/forumforpages/page/131461430229574"><button id="sexyforum" type="button" style="background:transparent;" class="btn btn-primary btn-lg">Forum</button></a>
-		<a style="float: right; position: absolute; right: 20%;" target="_blank" href="leaderboard.php"><button id="sexyleader" type="button" style="background:transparent;" class="btn btn-primary btn-lg">Leaderboard</button></a>
-		<a style="float: right; position: absolute; right: 10%;" href="logout.php"><button id="sexylogout2" type="button" style="background:transparent;" class="btn btn-primary btn-lg">Logout</button></a>
-		<a style="float: right; position: absolute; right: 0;"><button id="sexyrules" type="button" style="background:transparent;" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#rules_modal">Rules</button></a>
+		<a style="float: right; position: absolute; right: 20%;" target="_blank" href="leaderboard.php"><button id="sexyleader" type="button" class="btn btn-primary btn-lg">Leaderboard</button></a>
+		<a style="float: right; position: absolute; right: 10%;" href="logout.php"><button id="sexylogout2" type="button" class="btn btn-primary btn-lg">Logout</button></a>
+		<a style="float: right; position: absolute; right: 0;"><button id="sexyrules" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#rules_modal">Rules</button></a>
 	</div>
 	<div class="container">
 		<br><br><br><br><br><br>
