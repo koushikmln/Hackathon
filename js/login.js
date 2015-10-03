@@ -8,7 +8,7 @@ $(document).ready(function(){
 			data: $("#login_form").serialize()
 		}).done(function(alert_msg){
 			if(alert_msg.localeCompare("TRUE") == 0){
-				window.location.replace("./game.php");
+				window.location.replace("./game/game1.php");
 			}else{
 				$("#login_alert").html(alert_msg);
 				$("#login_alert").show();

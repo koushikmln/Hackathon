@@ -1,6 +1,4 @@
-<?php
-include 'config.php';
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,44 +6,37 @@ include 'config.php';
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mystique - Leaderboard</title>
+	<title>Hackathon - Leaderboard</title>
 	<link rel='stylesheet' href='css/style.css'>
 	<link rel='stylesheet' href='css/bootstrap.min.css'>
 	<link rel='stylesheet' href='js/dataTables.bootstrap.css'>
-	<link href="<?php echo CSS_URL; ?>material.css" rel='stylesheet' type='text/css' />
-    <link href="<?php echo CSS_URL; ?>ripples.css" rel='stylesheet' type='text/css' />
+	<link href="css/material.css" rel='stylesheet' type='text/css' />
+    <link href="css/ripples.css" rel='stylesheet' type='text/css' />
 </head>
 
 <body>
 	<center>
-		<h1 id="title">Leaderboard</h1>
-		<br><br><br>
-		<div id="leader" style="width:80%;">
+		<div id="leader" style="width:80%; min-height:650px;background-color:#ffffff;" >
+			<h1 style="color:#67b0d1; font-size:100px;">Leaderboard</h1>
+			<br>
 			<table id="userData" class="responsive table table-striped table-bordered" width="100%">
 				<thead>
 					<tr>
-						<th><strong>Nick</strong></th>
-						<th><strong>Level</strong></th>
-						<th><strong>Score</strong></th>
+						<th class="danger"><strong>Nick</strong></th>
+						<th class="danger"><strong>Level</strong></th>
+						<th class="danger"><strong>Score</strong></th>
 					</tr>
 				</thead>
-				<tfoot>
-					<tr>
-						<th><strong>Nick</strong></th>
-						<th><strong>Level</strong></th>
-						<th><strong>Score</strong></th>
-					</tr>
-				</tfoot>
 				<tbody>
 					<?php
 					
 					try{
-						$con = new PDO('mysql:dbname='.SQL_DB.';host='.SQL_HOST,SQL_USER,SQL_PASS);
+						$con = new PDO('mysql:dbname=hackathon;host=localhost','root','cassandra');
 						foreach($con->query('SELECT * FROM game ORDER BY score DESC, time ASC, level DESC ') as $row) {
 							echo'<tr>';
-							echo'<td>'.$row[0].'</td>';
-							echo'<td>'.$row[1].'</td>';
-							echo'<td>'.$row[2].'</td>';
+							echo'<td class="">'.$row[0].'</td>';
+							echo'<td class="">'.$row[1].'</td>';
+							echo'<td class="">'.$row[2].'</td>';
 							echo'</tr>';
 						}
 					}catch(PDOException $ex){
@@ -60,8 +51,8 @@ include 'config.php';
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/jquery.dataTables.min.js"></script>
 	<script src="js/dataTables.bootstrap.js"></script>
-	<script src="<?php echo JS_URL; ?>material.min.js"></script>
-	<script src="<?php echo JS_URL; ?>ripples.min.js"></script>
+	<script src="js/>material.min.js"></script>
+	<script src="js/ripples.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
 		$('#userData').DataTable({
@@ -69,6 +60,7 @@ include 'config.php';
 		});
 	});
 	</script>
+	<div id='footer'><div class='container' style='text-align: center'>&copy; ACM Birla Institute of Technology, Mesra 2015</div></div>
 </body>
 
 </html>

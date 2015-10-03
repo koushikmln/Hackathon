@@ -6,7 +6,7 @@
 <center>
 	<?php
 	if(isset($_SESSION['nick'])){
-		echo '<a href="game.php"><button id="sexycontinue" type="button" class="btn btn-primary btn-lg">Continue</button></a>';
+		echo '<a href="game/game'.$_SESSION['level'].'.php"><button id="sexycontinue" type="button" class="btn btn-primary btn-lg">Continue</button></a>';
 		echo '<a href="logout.php"><button id="sexylogout" type="button" class="btn btn-primary btn-lg">Logout</button></a>';
 	}else{
 		echo '<button id="sexyregistration" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#reg_modal"> Register Now</button>';

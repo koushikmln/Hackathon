@@ -5,7 +5,6 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h2 class="modal-title" id="myModalLabel">Rules</h2>
       </div>
-      <form class="form-horizontal" id="login_form">
         <div class="modal-body">
           <ul>
             <li> The competition has a bazillion levels of mindboggling cryptic connects.</li>

@@ -50,15 +50,17 @@ if($flag){
 		//Verify Password
 			if(password_verify($password,$row[0])){
 				$_SESSION['nick'] = $nick;
-				$stmt2 = $con->prepare("SELECT level FROM game where nick = ?");
+				$stmt2 = $con->prepare("SELECT * FROM game where nick = ?");
 				$stmt2->execute(array($nick));
 				$row2 = $stmt2->fetch();
 				if(!$row2){
 					$stmt3 = $con->prepare("INSERT INTO game (nick) VALUES (?)");
 					$stmt3->execute(array($nick));
 					$_SESSION['level'] = 1;
+                    $_SESSION['score'] = 0;
 				}else{
 					$_SESSION['level'] = $row2['level'];
+                    $_SESSION['score'] = $row2['score'];
 				}
 				echo "TRUE";
 			}else{

@@ -1,0 +1,3 @@
+<Files "password.txt">
+require all denied
+</Files>

@@ -81,7 +81,7 @@ body::before {
 }
 
 
-#userData th{
+/*#userData th{
 	text-align: center;
 	font-size: 14pt;
 	color: #3c3c3c;
@@ -92,7 +92,7 @@ body::before {
 	font-weight: bold;
 	font-size: 13pt;
 	color: #3c3c3c;
-}
+}*/
 
 #leader{
 	color: #67b0d1;
